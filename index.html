@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<header>
+    <!-- specifies the character encoding for the HTML document.  -->
     <meta charset="UTF-8">
+    <!-- allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- To create a responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-</head>
+</header>
 
 <body>
-    <div class="main">
-         <div class="title">
-            <img src="/Mikasa/logo.png" alt="Mikasa">
-            <span class="title1">
-                Customer Service
-            </span>
-            <span class="title1">
-                999 items - $9999.99 Checkout  |
-            </span>
-            <span class="title1">
-                My Account  |
-            </span>
-            <span class="title1">
-                Welcome Jeffery(Sign Out)  |
-            </span>
-        </div>
-        <div class="navvbar">
-            <button> Dinning</button>
-            <button> Crystal</button>
-            <button> By brand</button>
-            <button> What's New</button>
-            <button> Find a gift</button>
-            <button> Wedding Idea's</button>
-            <button> Clearnce and Special offer</button>
-            <input type="text" placeholder="Search Keyword/Item #"> 
-            <button>Go</button> 
-        </div>
-       <div class="navvbar2">
-            <button>Free shipping fro orders over $150</button>
-            <button>Holiday Platters</button>
-            <button>Celebrate Thanksgiving</button>
-            <button style="align-i">
-                <img src="/Mikasa/Untitled-5.jpg" alt="b"> Bridal Registry
-            </button>
-        </div>
-        <hr>
-         <div class="up">  
-            <div class="up1" style="width: 70%;">
-                    <img src="/Untitled-11.jpg" alt="cultery image" 
-                    style="height: 5 ;">
-            </div>
-            <div class="up1"style="width: 30%;" >
-                    <div class="leftin">
-                        <h3>Dress your Table</h3>
-                        <span>
-                            Create a fablous new look for your next event. Choose
-                            from various styles and ideas.
-                        </span>
-                        <ul style="list-style-type: none; ">
-                            <li>Contemporary</li>
-                            <hr>
-                            <li>Traditional</li>
-                            <hr>
-                            <li>Brunch</li>
-                            <hr>
-                            <li>Buffet</li>
-                            <hr>
-                            <li>Wine & Cheese</li>
-                        </ul>
-                        <a href="#">See More Dress Your Table Ideas</a>
-                    </div>
-            </div>        
-        </div> 
+    <header class="title">
+            <img src="/Mikasa/logo.png" id="logo" alt="Mikasa"> 
+        <span id="LogoleftSide">
+            <span>Welcome Jeffery (Signout)</span>
+            <span>My Account</span>
+            <span>9999 items - $ 9999.99 Check out</span>
+            <span>Customer Services</span>
+        </span>      
+    </header>
+    <div class="navvbar">
+            <table  >
+                <td>Dinning </td>
+                <td>Crystal </td>
+                <td> By brand </td>
+                <td> What's New</td>
+                <td> Find a gift</td>
+                <td> Wedding Idea's</td>
+                <td> Clearnce and Special offer</td>
+                <td>
+                    <input type="text" placeholder="Search Keyword/Item #"> 
+                    <button>Go</button> 
+                </td>             
+            </table>
     </div>
-
-
+    <div class="navvbar2">
+            <a href="#">Free shipping fro orders over $150</a>
+            <a href="#">Holiday Platters</a>
+            <a href="#">Celebrate Thanksgiving</a>
+            <a href="#" style="margin-left: 290px;" >
+                <img src="/Mikasa/Untitled-5.jpg" alt="b"> Bridal Registry
+            </a>
+    </div>
+    <hr>
+    <div id="up">  
+        <span id="up1">
+            <img src="/Untitled-11.jpg" alt="cultery image" style="height: 490px;">
+        </span>
+        <span id="up2" >
+            <div id="InsideUp2">
+                <h2>Dress Your Table</h2>
+                <p>
+                    Create a fabluous new look for <br> your next event. Choose from <br> various styles and ideas
+                </p>
+                <table>
+                        <tr>
+                            <td>
+                                Contemporay
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Traditional
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                bunch
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Themes
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Buffet
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Wine & Wishes
+                            </td>
+                        </tr>
+                </table><br>
+                <a>See More Dress Your Table Ideas</a>  
+            </div>             
+        </span>              
+    </div>  
+    <div id="down">
+        <div id="DownLeft" class="col">
+            <span style="color: #2f2d29;">You'll love our fine Steamwear collection<br></span>
+           <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+           </span> 
+           <span style="margin-left: 220px">See all Steamware</span>
+        </div>
+        <div id="DownCenter" class="col">
+            <span style="color: #2f2d29;">Home accent for the Holidays<br></span>
+            <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </span> <br><br>
+            <span style="margin-left: 195px">See all Home accents</span>
+        </div>
+        <div id="DownRight" class="col">
+            <span style="color: #2f2d29;">Mikasa Clearnce sale<br> 20% to 80% off</span><br>
+            <span>
+                Lorem Ipsum is simply dummy <br>text of the printing and typesetting <br>industry.
+            </span> <br><br>
+            <span>See all Clearnce items</span>
+        </div>      
+    
+    </div>
+    <div id="footer">
+        <div id="footerLeft">
+            <ul>
+                <li><a href="#">About Mikasa</a> </li> 
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <span>For assistance, call us at 1.866.645.2721 (Mon-Fri 8.30am-6.00pm est) or <a>Email Us</a></span><br>
+            <span>Copyright 2008 Mikasa & Company</span>
+        </div>
+        <div id="footerRight">
+            <span>Sign up to receive special offers & promotions from Mikasa </span><br>
+            <input type="text" placeholder="Enter your Email address"> <button>SIGNUP</button>
+        </div>
+    </div>
 </body>
-
 </html>
