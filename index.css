@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Mikasa/background.png);
+   
 }
 .main{
     height: 100%;
@@ -9,47 +9,84 @@ body{
 }
 .title{
     margin-left: 200px;
-    margin-right:40px;
+    margin-right:292px;
     /* display: inline-block; */
 }
 #logo{
-    
     padding-right: 150px;
 }
 
 #LogoleftSide{
     padding-left: 100px;
+    
 }
 #LogoleftSide span{
-    border-right: 2px solid black;
-    padding-left: 100px;
+    border-right: 2px solid lightgrey;
+    color: lightgray;
+    padding-left: 21px;
+    padding-right: 21px;
 }
-.navvbar{
+
+#navvbar{
     background-color: lightgray;
-    /* border-top: double grey 2px;
-    border-bottom: double grey 2px; */
-    border-style: double;
+    border-top: double white ;
+    border-bottom: double white ;
+    /* border-style: double; */
+    /* border-color: lightgray; */
     border-left: none;
     border-right: none;
     font-size: small;
 }
-.navvbar table{
-    margin-left: 200px;
-    
+
+#Primary_Navbar {
+   background-color: lightgrey;
+   padding-top: 8px;
+   padding-bottom: 3px;
+   width: 100%;
+   border-top: double  white;
+   border-bottom: double  white;
 }
-.navvbar table td{
-    padding-right: 15px;
-    padding-left: 10px;
-    border-right: solid 2px white;
+#Primary_Navbar span{
+    padding: 5px;
+    margin-left: 15px;
+    border-right: solid white;
+    padding-right: 25px;
+    padding-top: 10px;
 }
-.navvbar2{
+#Primary_Navbar span a{
+    text-decoration: none;
+    color: black;
+}
+
+#Secondary_Navbar div span a{
+    text-decoration: none;
+    color: black;
+    padding-right: 28px;
+    padding-left: 28px;
+    /* border-right: solid 2px white; */
+}
+
+#Secondary_Navbar{
     margin-left: 200px;
     margin-right:40px;
+    display: flex;
 }
-.navvbar2 a{
+#Secondary_Navbar col1{
+    width: 50%;
+}
+#Secondary_Navbar a{
     text-decoration: none;
     color: grey;
     padding: 10px;
+}
+#SN_1{
+    margin-top: 20px
+}
+#SN_2{
+    display: flex;
+}
+#bgdiv{
+    background-image: url(/Mikasa/background.png);
 }
 
 #up{
@@ -96,7 +133,7 @@ body{
 }
 .col {
     width: 33.33%;
-    border-right: 2px solid black;
+    border-right: 2px solid darkgray;
     padding: 20px;
     font-weight: normal;
     color: grey;
@@ -104,21 +141,21 @@ body{
     
 }
 #DownLeft{
-    background-image: url(/promo_glass.png);
+    background-image: url(/Mikasa/promo_glass.png);
     background-repeat: no-repeat;
     height: 130px;
     
 }
 
 #DownCenter{
-    background-image: url(/promo_plates.png);
+    background-image: url(/Mikasa/promo_plates.png);
     background-repeat: no-repeat;
     background-position: bottom;
     height: 130px;
 }
 
 #DownRight{
-    background-image: url(/promo_album.png);
+    background-image: url(/Mikasa/promo_album.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 130px;
@@ -148,11 +185,16 @@ body{
 }
 #footerLeft ul li{
     display: inline-block;
-    border-right: 2px solid white;
-    padding: 10px;
+    border-right: 1px solid white;
+    padding: 5px;
     font-size: small;
 }
 
 #footerRight{
     float: right;
+    margin: 10px;
+}
+
+#footerRight span{
+    margin: 5px;
 }
