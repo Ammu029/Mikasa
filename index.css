@@ -86,7 +86,7 @@ body{
     display: flex;
 }
 #bgdiv{
-    background-image: url(/Mikasa/background.png);
+    background-image: url(background.png);
 }
 
 #up{
@@ -141,21 +141,21 @@ body{
     
 }
 #DownLeft{
-    background-image: url(/Mikasa/promo_glass.png);
+    background-image: url(promo_glass.png);
     background-repeat: no-repeat;
     height: 130px;
     
 }
 
 #DownCenter{
-    background-image: url(/Mikasa/promo_plates.png);
+    background-image: url(promo_plates.png);
     background-repeat: no-repeat;
     background-position: bottom;
     height: 130px;
 }
 
 #DownRight{
-    background-image: url(/Mikasa/promo_album.png);
+    background-image: url(promo_album.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 130px;
