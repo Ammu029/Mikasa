@@ -1,5 +1,5 @@
 body{
-   
+     margin: 0px; 
 }
 .main{
     height: 100%;
@@ -8,101 +8,222 @@ body{
     /* padding: 50px 50px; */
 }
 .title{
-    margin-left: 200px;
+    /* margin-left: 200px;
     margin-right:292px;
+    margin-bottom: 10px; */
     /* display: inline-block; */
+    margin: auto;
+    width: 75%;
+    /* display: flex; */
 }
-#logo{
-    padding-right: 150px;
-}
-
-#LogoleftSide{
-    padding-left: 100px;
-    
-}
-#LogoleftSide span{
-    border-right: 2px solid lightgrey;
-    color: lightgray;
-    padding-left: 21px;
-    padding-right: 21px;
+.head{
+    border-bottom: solid 1px rgb(146, 146, 146);
 }
 
-#navvbar{
-    background-color: lightgray;
-    border-top: double white ;
-    border-bottom: double white ;
-    /* border-style: double; */
-    /* border-color: lightgray; */
-    border-left: none;
-    border-right: none;
-    font-size: small;
+.accountDetailsBar {
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-right: 18px;
+}
+.accountDetailsBar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+}
+.accountDetailsBar li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    /* border-right: 1px solid #ccc; */
+    background-color: #fff;
 }
 
-#Primary_Navbar {
-   background-color: lightgrey;
-   padding-top: 8px;
-   padding-bottom: 3px;
+.accountDetailsBar li::after{
+    content: "|";
+    padding-left: 20px;
+}
+.accountDetailsBar li:last-child::after{
+    content: " ";  
+}
+.accountDetailsBar ul li:last-child{
+    border: none;
+}
+.accountDetailsBar ul  {
+    display: flex;
+    color: rgb(120 118 118);
+    /* margin-left: 352px; */
+}
+.accountDetailsBar ul  li{ 
+    list-style-type: none;
+}
+.accountDetailsBar ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.PrimaryNavbar {
+   background-color: #E3D7C9;
+   /* padding-top: 5px;
+   padding-bottom: 5px; */
    width: 100%;
    border-top: double  white;
    border-bottom: double  white;
+   position: relative;
+   overflow: hidden;
+   font-family: sans-serif;
+    font-size: 15px;
 }
-#Primary_Navbar span{
-    padding: 5px;
-    margin-left: 15px;
-    border-right: solid white;
-    padding-right: 25px;
-    padding-top: 10px;
-}
-#Primary_Navbar span a{
-    text-decoration: none;
+.PrimaryNavbar ul{
+    display: flex;
     color: black;
+    margin: auto;
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    height: 26px;
+}
+.PrimaryNavbar ul li{
+    list-style-type: none;
+    padding-right: 50px;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 5px 1em;
+    text-align: center;
+    border-right: 1px solid white;
+}
+.PrimaryNavbar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.dining{
+    padding-left: 0px;
 }
 
-#Secondary_Navbar div span a{
+.PrimaryNavbar ul li:hover{
+    background-color: rgb(183, 179, 179);
+}
+.PrimaryNavbar ul li:first-child{
+    padding-left: 0px;
+}
+.PrimaryNavbar ul li:last-child{
+    border-right: none;
+}
+/* .PrimaryNavbar ul li button{
+    cursor: pointer;
+} */
+.disabled{
+    pointer-events: none;
+}
+.SecondaryNavbar div span a{
     text-decoration: none;
     color: black;
     padding-right: 28px;
-    padding-left: 28px;
+    
     /* border-right: solid 2px white; */
 }
+#shippingDiv ul li span a{
+    color: #7f8198;
+}
+ul.a{
+    color: darkgrey;
+}
 
-#Secondary_Navbar{
-    margin-left: 200px;
-    margin-right:40px;
+.shippingDiv{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.shippingDiv ul li:first-child{
+    list-style: none; 
+}
+.SecondaryNavbar{
+    margin: auto;
+    width: 75%;
     display: flex;
 }
-#Secondary_Navbar col1{
-    width: 50%;
-}
-#Secondary_Navbar a{
+
+.SecondaryNavbar a{
     text-decoration: none;
     color: grey;
     padding: 10px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
 }
-#SN_1{
-    margin-top: 20px
-}
-#SN_2{
+.SN1{
     display: flex;
 }
-#bgdiv{
+.shippingDiv ul li a:hover  {
+    text-decoration: underline;
+}
+.shippingDiv ul li{
+    padding-right: 20px;
+    height: 0px;
+}
+.Links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.shippingDiv ul{
+    list-style-type: circle;
+    display: flex;
+    padding-left: 0px;
+}
+.SN2{
+    display: flex;
+}
+
+.SN2 a:hover{
+    text-decoration: underline;
+}
+
+.SN2 a:first-child{
+    margin-left: 410px; 
+    padding: 0px;
+}
+
+.SN2 a img{
+    position: inherit; 
+    padding-top: 2px;
+}
+.mainBody{
     background-image: url(background.png);
 }
 
-#up{
-    margin-left: 200px;
-    margin-right:300px;
+.mainContent{
+    margin: auto;
+    width: 75%;
+}
+.section1{
     background-color: white;
-    padding: 10px;
+   display: flex;
+    padding-bottom: 2px
+}
+figure{
+    margin-inline: 8px;
+    /* padding-top: 10px; */
+    margin-block-end: 1px;
+    margin-block-start: 7px
+}
+figure img{
+    height: 535px;
 }
 #up2  {
     background-color: #39352f;
     color: white;
     float: right;
     /* margin-right: 300px; */
-    width: 323px;
-    height: 490px;
-    
+    width: 324px;
+    height: 535px;
+    margin-top: 7px;
     /* background-color: black;
     color: white;
     height: 600px;
@@ -111,25 +232,76 @@ body{
     margin-right: 250px; */
 }
 
-#InsideUp2{
-    margin: 20px;
+.InsideUp2{
+    margin: 10px;
     padding: 40px;
     border: 2px solid grey;
     /* text-align: center; */
-    padding-top: 5px;
-    padding-bottom: 15px
+    padding-top: 8px;
+    /* padding-bottom: 15px; */
+    height: 464px;
+    font-family: sans-serif;
+}
+.InsideUp2 p{
+    color: #a6a4a1;
+    font-size: 16px;
+    
+}
+.InsideUp2 ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    padding-top: 6px;
+}
+.InsideUp2 ul li{
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    /* text-align: left; */
+    font-size: large;
 }
 
+.InsideUp2 ul li:last-child{
+    border-bottom: none;
+}
+.InsideUp2 h2{
+    
+    font-size: 30px;
+    font-weight: 100;
+    font-size: 30px; 
+    padding-top: 28px
+}
+
+.seeMore{
+    margin-top: 52px;
+    font-size: 13px;
+}
+.seeMore a{
+    color: #a6a4a1;
+}
+.wine{
+    border-bottom: none;
+}
 /* #InsideUp2 table{
     margin-left: 40px;
 } */
 
 #down{
-    margin-left: 200px;
-    margin-right:300px;
-    background-color: #DAD1C2;
+    margin: auto;
+    background-color: #000000;
     display: flex;
-    padding: 5px;
+    padding: 7px;
+    padding-top: 6px
+}
+#allDownIn{
+    display: flex;
+    width: 100%;
+    background: white;
+    align-items: center;
+    height: 200px;
+}
+
+#allDownIn div:last-child{
+    border-right:none ;
 }
 .col {
     width: 33.33%;
@@ -138,63 +310,96 @@ body{
     font-weight: normal;
     color: grey;
     background-color: white;
-    
+    font-family: sans-serif;
 }
-#DownLeft{
+.DownLeft{
     background-image: url(promo_glass.png);
     background-repeat: no-repeat;
-    height: 130px;
-    
+    height: 155px;
+    background-size: 370px;
 }
 
-#DownCenter{
+.DownLeft pre{
+    margin-left: 220px
+}
+
+.DownCenter{
     background-image: url(promo_plates.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 130px;
+    height: 155px;
 }
 
-#DownRight{
+.DownCenter pre{
+    margin-left: 210px
+}
+.DownRight{
     background-image: url(promo_album.png);
     background-repeat: no-repeat;
     background-position: right;
-    height: 130px;
+    background-size: 250px;
+    height: 155px;
 }
+
 
 #down span{
      text-align: right;
+     font-size: 14px;
 }
 
-#footer{
-    margin-left: 200px;
-    margin-right:300px;
+.footer{
+    margin: auto;
     color: lightgray;
+    font-family: sans-serif;
 }
-#footerLeft{
+.footerLeft{
     display: inline-block;
 }
-#footerLeft a {
+.footerLeft a {
     
     color: lightgray;
     list-style-type: none;
 }
-#footerLeft ul{
+
+.footerLeft ul li:last-child::after{
+    content: " ";
+}
+
+.footerLeft ul{
     margin: 0px;
     padding: 0px;
     margin-top: 10px;
 }
-#footerLeft ul li{
+.footerLeft ul li{
     display: inline-block;
-    border-right: 1px solid white;
-    padding: 5px;
     font-size: small;
+    padding-right: 5px
 }
 
-#footerRight{
+.footerLeft ul li::after{
+    content: "|";
+    padding-left: 5px;
+}
+
+.footerRight{
     float: right;
-    margin: 10px;
+    
 }
 
-#footerRight span{
+.footerRight span{
     margin: 5px;
+}
+
+.footerRight span button{
+    border-radius: 8px; cursor: pointer;
+}
+
+.footerHeading{
+    color: #2f2d29; 
+    font-size: 20px;
+}
+
+pre{
+    font-family: sans-serif;
+    font-size: 13px;
 }
